@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:700px) {}
