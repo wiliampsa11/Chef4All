@@ -5,6 +5,8 @@
 
 body {
     margin: 0;
+    background-color: black;
+    color: white;
 }
 
 .row:after {
@@ -13,147 +15,99 @@ body {
     clear: both;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-/* caja de arriba*/
 
-ul {
-    list-style-type: none;
+/*Barra de navegación*/
+
+#navegador ul {
     margin: 0;
-    font-size: 20px;
-    padding: 5px 15%;
     overflow: hidden;
     position: fixed;
     top: 0;
+    list-style-type: none;
+    text-align: center;
     width: 100%;
     transition: 0.8s;
+    font-size: 20px;
+    padding: 5px 15%;
+    background-color: #1C1818;
 }
 
-li {
-    float: left;
+#navegador li {
+    display: inline;
+    text-align: center;
+    width: 25%;
 }
 
-li a {
-    display: block;
-    color: black;
+#navegador li a {
     text-align: center;
     padding: 14px 16px;
+    color: white;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: black;
-    color: gray;
+#navegador li a:hover {
+    background-color: #333333;
+    color: #ffd700;
+}
+
+#lisiz {
+    text-align: center;
+    float: right;
+    padding: 0%;
+    margin-right: -20%;
 }
 
 
 /**/
 
 
-/*Slideshow*/
+/*Caja foto receta*/
 
-.mySlides {
-    display: none
+.one-column {
+    float: left;
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-img {
-    vertical-align: middle;
+.one-column p {
+    font-size: 2vw;
 }
 
-
-/**/
-
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+.one-column img {
+    width: 50%;
+    margin-bottom: -5px;
 }
 
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+.two-column {
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -35px;
+    text-align: center;
 }
 
-
-/* Position the "next button" to the right */
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.two-column p {
+    font-size: 20px;
+    text-align: left;
 }
 
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+#arreglap {
+    text-align: left;
+    font-size: 20px;
+    width: 50%;
 }
 
-
-/* The dots/bullets/indicators */
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+ol {
+    margin-top: -10px;
+    margin-left: -25px;
+    float: left;
+    text-align: left;
 }
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-
-/**/
 
 @media screen and (max-width:700px) {}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
