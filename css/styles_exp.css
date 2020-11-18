@@ -105,6 +105,10 @@ body {
     font-size: 2vw;
 }
 
+.two-column h4 {
+    font-size: 1.5vw;
+}
+
 .four-column {
     width: 25%;
     float: left;

@@ -30,7 +30,7 @@ html {
     list-style-type: none;
     text-align: center;
     width: 100%;
-    transition: 0.8s;
+    transition: 0.5s;
     font-size: 20px;
     padding: 5px 15%;
 }
@@ -125,4 +125,10 @@ ol {
 #footer p {
     text-align: center;
     margin-right: 75%;
+}
+
+#footer h4 {
+    text-align: center;
+    margin-right: 75%;
+    font-size: 1.5vw;
 }
