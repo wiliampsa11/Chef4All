@@ -49,7 +49,6 @@ html {
 }
 
 #navegador li a:hover {
-    background-color: #333333;
     color: #ffd700;
 }
 
@@ -66,34 +65,21 @@ html {
 
 /*Caja foto receta*/
 
-.one-column {
-    float: left;
-    width: 100%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.one-column p {
-    font-size: 2vw;
-}
-
-.one-column img {
-    width: 50%;
-    margin-bottom: -5px;
-}
-
 .two-column {
     float: left;
     width: 50%;
     margin-left: 25%;
-    margin-right: 25%;
-    margin-top: -35px;
     text-align: center;
 }
 
 .two-column p {
     font-size: 20px;
     text-align: left;
+}
+
+.two-column img {
+    width: 100%;
+    margin-bottom: -5px;
 }
 
 #arreglap {
@@ -107,6 +93,44 @@ ol {
     margin-left: -25px;
     float: left;
     text-align: left;
+}
+
+#receta {
+    font-size: 2vw;
+    text-align: left;
+    margin: auto;
+}
+
+#receta1 {
+    font-size: 2vw;
+    text-align: left;
+    margin: auto;
+}
+
+#receta2 {
+    font-size: 1vw;
+    text-align: left;
+    color: #ffd700;
+}
+
+
+/*Footer*/
+
+#footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#footer h4 {
+    text-align: right;
+    margin-bottom: -20px;
+    font-size: 2vw;
+}
+
+#footer p {
+    font-size: 1vw;
+    text-align: right;
 }
 
 @media screen and (max-width:700px) {}

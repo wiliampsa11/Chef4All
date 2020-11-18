@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: 'Alegreya', serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/*Barra de navegación*/
+
+#navegador ul {
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    transition: 0.8s;
+    font-size: 20px;
+    padding: 5px 15%;
+}
+
+#navegador li {
+    display: inline;
+    text-align: center;
+    width: 25%;
+}
+
+#navegador li a {
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+#navegador li a:hover {
+    color: #ffd700;
+}
+
+#lisiz {
+    text-align: center;
+    float: right;
+    padding: 0%;
+    margin-right: -20%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*background-image: url(img/header.jpg);*/
+
+
+/*Header*/
+
+.header {
+    background-color: black;
+    width: 100%;
+    padding: 4%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 80px;
+    color: #ffdf00;
+}
+
+.header h2 {
+    font-size: 30px;
+}
+
+
+/*Columns*/
+
+.one-column {
+    width: 100%;
+    padding: 2% 7%;
+}
+
+.two-column {
+    width: 50%;
+    float: left;
+    padding: 3%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.two-column h3 {
+    font-size: 2vw;
+}
+
+.four-column {
+    width: 25%;
+    float: left;
+    padding: 1% 1% 0% 1%;
+    text-align: center;
+}
+
+.four-column img {
+    width: 300px;
+}
+
+.primfoto img {
+    width: 255px;
+}
+
+
+/*ID*/
+
+#footer {
+    background-color: black;
+}
+
+#macarr img {
+    width: 230px;
+}
+
+#pasta-col img {
+    width: 275px;
+}
+
+
+/*Media Screen*/
+
+@media screen and (max-width:1200px) {
+    .two-column {
+        width: 50%;
+    }
+    .two-column h3 {
+        font-size: 4vw;
+    }
+    .four-column {
+        width: 50%;
+        padding: 0%;
+        font-size: 2.3vw;
+    }
+    .four-column img {
+        width: 60%;
+    }
+    .four-column h3 {
+        padding: 0.5%;
+    }
+    .primfoto img {
+        width: 47%;
+    }
+    #macarr img {
+        width: 40%;
+    }
+    #pasta-col img {
+        width: 55%;
+    }
+}
