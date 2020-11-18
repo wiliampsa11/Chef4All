@@ -44,12 +44,12 @@ html {
 #navegador li a {
     text-align: center;
     padding: 14px 16px;
-    color: white;
+    color: #ffd700;
     text-decoration: none;
 }
 
 #navegador li a:hover {
-    color: #ffd700;
+    color: white;
 }
 
 #lisiz {
@@ -69,12 +69,11 @@ html {
     float: left;
     width: 50%;
     margin-left: 25%;
-    text-align: center;
+    color: white;
 }
 
-.two-column p {
-    font-size: 20px;
-    text-align: left;
+.two-column h3 {
+    font-size: 2vw;
 }
 
 .two-column img {
@@ -120,17 +119,10 @@ ol {
     background-color: black;
     color: white;
     font-size: 20px;
-}
-
-#footer h4 {
-    text-align: right;
-    margin-bottom: -20px;
-    font-size: 2vw;
+    text-align: left;
 }
 
 #footer p {
-    font-size: 1vw;
-    text-align: right;
+    text-align: center;
+    margin-right: 75%;
 }
-
-@media screen and (max-width:700px) {}

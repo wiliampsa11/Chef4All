@@ -9,6 +9,23 @@ body {
 }
 
 
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*background-image: url(img/header.jpg);*/
+
+
 /*Barra de navegación*/
 
 #navegador ul {
@@ -33,12 +50,12 @@ body {
 #navegador li a {
     text-align: center;
     padding: 14px 16px;
-    color: white;
+    color: #ffd700;
     text-decoration: none;
 }
 
 #navegador li a:hover {
-    color: #ffd700;
+    color: white;
 }
 
 #lisiz {
@@ -47,23 +64,6 @@ body {
     padding: 0%;
     margin-right: -20%;
 }
-
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row a {
-    color: black;
-    text-decoration: none;
-}
-
-
-/*background-image: url(img/header.jpg);*/
 
 
 /*Header*/
@@ -143,26 +143,26 @@ body {
         width: 50%;
     }
     .two-column h3 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .four-column {
-        width: 50%;
-        padding: 0%;
-        font-size: 2.3vw;
+        width: 100%;
+        padding: 2%;
+        font-size: 4vw;
     }
     .four-column img {
-        width: 60%;
+        width: 70%;
     }
     .four-column h3 {
         padding: 0.5%;
     }
     .primfoto img {
-        width: 47%;
+        width: 65%;
     }
     #macarr img {
-        width: 40%;
+        width: 60%;
     }
     #pasta-col img {
-        width: 55%;
+        width: 65%;
     }
 }
