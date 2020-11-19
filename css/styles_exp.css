@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /* font */
     font-family: 'Alegreya', serif;
 }
 
@@ -9,15 +10,22 @@ body {
     color: white;
 }
 
+
+/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-html {
-    scroll-behavior: smooth;
+.row a {
+    color: black;
+    text-decoration: none;
 }
+
+
+/*background-image: url(img/header.jpg);*/
 
 
 /*Barra de navegación*/
@@ -30,7 +38,7 @@ html {
     list-style-type: none;
     text-align: center;
     width: 100%;
-    transition: 0.5s;
+    transition: 0.8s;
     font-size: 30px;
     padding: 5px 15%;
 }
@@ -61,35 +69,36 @@ html {
 }
 
 
-/**/
+/*Header*/
+
+.header {
+    background-color: black;
+    width: 100%;
+    padding: 4%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 80px;
+    color: #ffdf00;
+}
+
+.header h2 {
+    font-size: 30px;
+}
 
 
-/*Caja foto receta*/
+/*Columns*/
 
 .one-column {
     width: 100%;
     padding: 2% 7%;
 }
 
-.one-column img {
-    width: 50%;
-}
-
-.one-column h3 {
-    font-size: 2vw;
-    text-align: center;
-}
-
-.one-column h4 {
-    font-size: 1.5vw;
-}
-
 .two-column {
     width: 50%;
     float: left;
     padding: 3%;
-    background-color: black;
-    color: white;
     text-align: left;
 }
 
@@ -101,56 +110,38 @@ html {
     font-size: 1.5vw;
 }
 
-ol {
-    margin-top: -10px;
-    margin-left: -25px;
+#columblanc {
+    background-color: white;
+    color: black;
+    text-align: left;
     float: left;
-    text-align: left;
-}
-
-#receta {
-    font-size: 2vw;
-    text-align: left;
-    margin: auto;
-}
-
-#receta1 {
-    font-size: 2vw;
-    text-align: left;
-    margin: auto;
-}
-
-#receta2 {
-    font-size: 1vw;
-    text-align: left;
-    color: #ffd700;
 }
 
 
-/*Footer*/
+/*ID*/
 
 #footer {
     background-color: black;
-    color: white;
-    font-size: 20px;
-    text-align: left;
+    text-align: center;
 }
 
-#footer p {
-    text-align: center;
-    margin-right: 75%;
-}
 
-#footer h4 {
-    text-align: center;
-    margin-right: 75%;
-}
+/*Media Screen*/
 
 @media screen and (max-width:1200px) {
+    .one-column img {
+        width: 100%;
+    }
+    .two-column h4 {
+        font-size: 5vw;
+    }
+    .two-column p {
+        font-size: 2vw;
+    }
     .two-column {
         width: 50%;
     }
-    .two-column h4 {
+    .two-column h3 {
         font-size: 5vw;
     }
     .four-column {
@@ -161,8 +152,23 @@ ol {
     .four-column img {
         width: 70%;
     }
-    ul {
-        font-size: 20px;
+    .four-column h3 {
+        padding: 0.5%;
+    }
+    .primfoto img {
+        width: 65%;
+    }
+    #macarr img {
+        width: 60%;
+    }
+    #pasta-col img {
+        width: 65%;
+    }
+    li a {
+        font-size: 5vw;
+    }
+    #navegador {
+        padding: 25% 0 0 0;
     }
     #footer h4 {
         font-size: 1.5vw;

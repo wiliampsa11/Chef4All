@@ -144,6 +144,15 @@ body {
 /*Media Screen*/
 
 @media screen and (max-width:1200px) {
+    .one-column img {
+        width: 100%;
+    }
+    .two-column h4 {
+        font-size: 5vw;
+    }
+    .two-column p {
+        font-size: 2vw;
+    }
     .two-column {
         width: 50%;
     }
@@ -169,5 +178,14 @@ body {
     }
     #pasta-col img {
         width: 65%;
+    }
+    li a {
+        font-size: 5vw;
+    }
+    #navegador {
+        padding: 25% 0 0 0;
+    }
+    #footer h4 {
+        font-size: 1.5vw;
     }
 }
