@@ -1,11 +1,9 @@
-window.onscroll = function() {
-    scrollFunction()
-};
+// Añade sombra a la barra superior al hacer scroll
+const barra = document.getElementById('nav');
 
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("nav").style.backgroundColor = "black";
-    } else {
-        document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.0)";
-    }
+function actualizarBarra() {
+    barra.classList.toggle('scrolled', window.scrollY > 50);
 }
+
+window.addEventListener('scroll', actualizarBarra, { passive: true });
+actualizarBarra();

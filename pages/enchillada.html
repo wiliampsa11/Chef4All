@@ -1,87 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--Grupo4= Alex Toscano, Carlos Sanchez, Óscar López-->
+<!-- Grupo 4: Alex Toscano, Carlos Sánchez, Óscar López y Uíliam Mateu -->
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/styles_exp.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
-    <title>Chef4All</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Receta de enchiladas de pollo con salsa de chile y queso gratinado.">
+    <title>Enchiladas | Chef4All</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Alegreya+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <!--barra de navegación-->
-    <div id="navegador" class="row">
-        <ul id="nav">
-            <li><a>Chef4All</a></li>
-            <div id="lisiz">
-                <li><a href="../index.html">Explorar recetas</a></li>
-                <li><a>Perfil</a></li>
-                <li><a>Ajustes</a></li>
+    <header class="topbar" id="nav">
+        <a class="logo" href="../index.html">Chef4All</a>
+        <nav aria-label="Principal">
+            <a href="../index.html">Explorar recetas</a>
+        </nav>
+    </header>
+
+    <main class="detalle">
+        <a class="volver" href="../index.html">← Todas las recetas</a>
+
+        <div class="detalle-cabecera">
+            <img src="../img/enchiladas.jpg" alt="Enchiladas con salsa de tomate y aguacate" width="1200" height="1200">
+            <div>
+                <h1>Enchiladas</h1>
+                <p>Se sirven bañadas en una salsa picante de chile, de ahí su nombre. Esta versión lleva pollo, queso fundido y se gratina al horno.</p>
             </div>
-        </ul>
-    </div>
-    <!--Section1-->
-    <div class="row">
-        <div class="one-column">
-            <h2>Enchiladas</h2>
-            <img style="max-width: 20%;" src="../img/enchiladas.jpg" alt="Enchiladas">
-            <h3>Las enchiladas se sirven bañadas con una salsa picante de chile, de allí su nombre.</h3>
         </div>
-    </div>
-    <div class="row" id="columblanc">
-        <div class="two-column">
-            <h4>Ingredientes</h4>
-            <ol>
-                <li>500g Pechugas de pollo</li>
-                <li>4 tortillas de trigo mexicanas</li>
-                <li>1 brick tomate frito</li>
-                <li>1 cebolla</li>
-                <li>1 trozo de unos 7 cms de queso emmental</li>
-                <li>1 queso especias para gratinar</li>
-                <li>1 cucharadita de sazonador de fajitas</li>
-                <li>1 cucharada de orégano</li>
-                <li>1 cucharadita de comino molido</li>
-                <li>1 hoja de laurel</li>
-                <li>Laurel hoja 1</li>
-                <li>1/2 cucharadita de pimienta negra recién molida</li>
-                <li>Pimienta negra molida</li>
-                <li>1 chile ancho seco</li>
-            </ol>
+
+        <div class="detalle-cuerpo">
+            <section class="bloque">
+                <h2>Ingredientes</h2>
+                <ul>
+                    <li>500 g de pechugas de pollo</li>
+                    <li>4 tortillas de trigo mexicanas</li>
+                    <li>1 brick de tomate frito</li>
+                    <li>1 cebolla</li>
+                    <li>1 trozo de unos 7 cm de queso emmental</li>
+                    <li>Queso especial para gratinar</li>
+                    <li>1 cucharadita de sazonador de fajitas</li>
+                    <li>1 cucharada de orégano</li>
+                    <li>1 cucharadita de comino molido</li>
+                    <li>1 hoja de laurel</li>
+                    <li>½ cucharadita de pimienta negra recién molida</li>
+                    <li>1 chile ancho seco</li>
+                    <li>Sal y aceite</li>
+                </ul>
+            </section>
+
+            <section class="bloque">
+                <h2>Preparación</h2>
+                <ol>
+                    <li>Cuece en la olla exprés las pechugas troceadas con la cebolla pelada, la hoja de laurel, sal y un poco de aceite, unos 15 o 20 minutos.</li>
+                    <li>Desmenuza el pollo y ponlo en un cazo con el emmental en daditos. A fuego medio, espera a que se funda el queso: este es el relleno.</li>
+                    <li>En una sartén, echa el tomate frito con la cebolla ya tierna, el chile ancho hidratado y limpio (sin semillas ni tallo) y las especias: sazonador de fajitas, orégano, comino, pimienta y sal. Remueve, prueba y rectifica de sal.</li>
+                    <li>Tritura la salsa y vuelve a ponerla en la sartén.</li>
+                    <li>Pasa cada tortilla por la salsa, rellénala de pollo con queso y enróllala.</li>
+                    <li>Cubre las cuatro tortillas con la salsa sobrante y el queso para gratinar. Si tienes nata para cocinar, puedes añadirla antes del queso para que queden más jugosas.</li>
+                    <li>Gratina en el horno a 200 ºC unos minutos y sirve.</li>
+                </ol>
+            </section>
         </div>
-        <div class="two-column">
-            <h4>Preparación</h4>
-            <p>
-                Ponemos a cocer en la olla exprés las pechugas de pollo (cortadas previamente en trozos) junto con la cebolla pelada, una hojita de laurel, sal y un poco de aceite. Estará lista en unos 15 o 20 minutos.
-            </p>
-            <p>
-                Desmenuzamos el pollo y lo ponemos en un cazo junto al queso emmental cortado en daditos. Lo ponemos a fuego medio y esperamos a que se funda el queso. Este será el relleno de las enchiladas, lo apartamos y vamos preparando la salsa.
-            </p>
-            <p>
-                Echamos en una sartén el brick de tomate frito junto con la cebolla (que estará tierna), el chile ancho hidratado y limpio (sin semillas ni tallo) y las especias (sazonador de fajitas, orégano, comino, pimienta negra y sal). Removemos bien y probamos.
-                Rectificamos de sal si fuera necesario. A continuación lo trituramos todo y después lo vertemos sobre la sartén nuevamente.
-            </p>
-            <p>Embadurnamos las tortillas de trigo en la salsa y a continuación la rellenamos de la carne con el queso y la enrollamos. Hacemos lo mismo con las otras tres.</p>
-            <p>Cuando tengamos las 4 tortillas rellenas le vertemos por encima la salsa sobrante y a continuación echamos el queso especial para gratinar. Si tenemos nata para cocinar podríamos añadirla antes del queso, le dará una textura suave y súper
-                jugosa, pero yo no tenía y me salté ese paso.</p>
-            <p>Metemos la enchilada en el horno unos minutos, a unos 200º, para gratinarla y ya la tienes lista.</p>
-        </div>
-    </div>
-    <!--footer-->
-    <div class="row" id="footer">
-        <div class="two-column">
-            <h4>Redes Sociales</h4>
-            <p>Instagram</p>
-            <p>Twitter</p>
-            <p>Facebook</p>
-        </div>
-        <div class="two-column">
-            <h4>About Us</h4>
-        </div>
-    </div>
+    </main>
+
+    <footer class="pie">
+        <p><strong>Chef4All</strong> · Hecho por Alex Toscano, Carlos Sánchez, Óscar López y Uíliam Mateu.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
-
-<script src="../js/script.js"></script>
